@@ -1,0 +1,5 @@
+- name: Test Connectivity
+  gather_facts: false
+  tasks:
+    - name: Ansible Ping, more than just ICMP
+      ansible.builtin.ping:
