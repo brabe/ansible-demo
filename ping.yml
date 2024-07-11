@@ -1,5 +1,5 @@
 - name: Test Connectivity
-  hosts: all
+  hosts: servers
   gather_facts: false
   tasks:
     - name: Ansible Ping, more than just ICMP
