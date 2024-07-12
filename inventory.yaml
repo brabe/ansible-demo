@@ -1,13 +1,9 @@
 servers:
   children:
-    phase1:      
-      hosts:
-        AZ-USE-NAVD-01:
-          ansible_host: az-use-navd-01.internal.cloudapp.net
-    phase2:
-      hosts:
-        AZ-USE-NAVD-02:
-          ansible_host: az-use-navd-02.internal.cloudapp.net
+    hosts:
+      AZ-USE-NAVD-01:
+        ansible_host: az-use-navd-01.internal.cloudapp.net
+    
   vars:
     release_version: 8
     ansible_ssh_common_args: -o StrictHostKeyChecking=no
